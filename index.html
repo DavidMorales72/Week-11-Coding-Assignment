@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="stylesheet.css">
+
+<!-- this group of links, are uused to refer to an external google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- This div will hold the body of the game -->
+    <div id="game-container">
+        <h1>Tic Tac Toe</h1>
+        <!-- This div will hold all of the 9 boxes that willbe used by the user to play the game, each div has the id of "box-container" and an index -->
+        <div id="box-container">
+            <div box-index="0" class="box"></div>
+            <div box-index="1" class="box"></div>
+            <div box-index="2" class="box"></div>
+            <div box-index="3" class="box"></div>
+            <div box-index="4" class="box"></div>
+            <div box-index="5" class="box"></div>
+            <div box-index="6" class="box"></div>
+            <div box-index="7" class="box"></div>
+            <div box-index="8" class="box"></div>
+        </div>
+        <!-- This h2 will change depending on whos turn it is -->
+        <div class=" container w-25 alert alert-success" role="alert" id="heading-container">
+            <h2 id="game-status"></h2>
+        </div>
+        
+        <!-- this button will be used to clear the game board and will start a new game -->
+        <button class="btn btn-outline-success" id="play-again">Play Again</button>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="tictactoe.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+.box{
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 65px;
+    cursor: pointer;
+}
+/* got a neon glow effect from the web */
+#game-container{
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
+    
+    color: rgb(250, 255, 107);
+    text-shadow:
+    /* White glow */
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    /* Green glow */
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+}
+
+#box-container{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
+}
+
+body{
+    background-color: black;
+}
